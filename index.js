@@ -7,6 +7,13 @@ const questions = [];
 
 function writetoFile(filname, data) {}
 
-function init() {}
+// function init() {
+// const init = async () {
+//     inquirer.prompt(questions).then((answers => {
+//         console.log(answers);
+//          writetoFile();
+//     });
+// }
+
 
 init();
