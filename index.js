@@ -4,12 +4,14 @@ const inquirer = require('inquirer');
 // const generateMarkdown = require('.utils/generateMarkdown');
 
 const generateReadMe = ({ headline , gitLinks , liveLink }) =>
-    ` ## About the project
+    ` ## About the project:
         - Learn more about ${headline} below.
 
-      ## Links
+      ## Links:
         - View our repository here: ${gitLinks}
         - View our live deployment here: ${liveLink}  
+
+      ## About the project:  
     `
 
 
