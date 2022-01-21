@@ -4,57 +4,73 @@ const inquirer = require('inquirer');
 // const generateMarkdown = require('.utils/generateMarkdown');
 
 const generateReadMe = (responses) =>
-    `# ${responses.headline}
 
-    <h1> Table of Contents </h1>
-      <ol>
-        <li><a href="#description"> 1. Description</a></li>
-        <li><a href="#install"> 2. Installation </a></li>
-        <li><a href="#usage"> 4. Usage </a></li>
-        <li><a href="#contributing"> 4. Contributing </a></li>
-        <li><a href="#test"> 5. Testing </a></li>
-        <li><a href="#license"> 6. License </a></li>
-      </ol>
+`# ${responses.headline} 
+
+## Table of Contents 
+            
+<a href="#description"> 1. Description</a>  
+
+<a href="#install"> 2. Installation </a>
+
+<a href="#usage"> 4. Usage </a></li>
+
+<a href="#contributing"> 4. Contributing </a>
+
+<a href="#test"> 5. Testing </a>
+
+<a href="#license"> 6. License </a>
+        
     
-    [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)    
-    
-    
-    <h1 id='description'> Description </h1>
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
+## Description <h1 id='description'> </h1>
           
-          - ${reponses.description}
+    - ${responses.description}
     
-    <h1 id='install'> Installation </h1>
+## Installation <h1 id='install'></h1>
           
-          - ${responses.install}
+    - ${responses.install}
     
-    <h1 id='usage'> Usage </h1>
+## Usage <h1 id='usage'> </h1>
           
-          - ${responses.usage}
+    - ${responses.usage}
+
+## Description <h1 id='description'></h1>
+          
+    - ${responses.description}
     
-    <h1 id='contributing'> Contributing </h1>
+## Installation <h1 id='install'></h1>
           
-          - ${responses.email}
-          
-          - ${responses.github}
-          
-          - ${responses.linked}
+    - ${responses.install}
     
-    <h1 id='test'> Testing </h1>
+## Usage <h1 id='usage'></h1>
+          
+    - ${responses.usage}
+    
+## Contributing <h1 id='contributing'></h1>
+          
+    - ${responses.email}
+          
+    - ${responses.github}
+          
+    - ${responses.linked}
+    
+## Testing <h1 id='test'></h1>
          
-          - ${responses.testing}
+    - ${responses.testing}
          
-          - ${responses.questions}
+    - ${responses.questions}
     
-    <h1 id='license'> License </h1>
-    Copyright <${year}> <${firstName}>
+## License <h1 id='license'></h1>
+    Copyright ${responses.year} ${responses.username}
     
     Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
     
     THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-    `
     
-
-
+    // THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.`
+    
 inquirer
     .prompt([
         {
@@ -71,6 +87,11 @@ inquirer
             type: 'input',
             name: 'install',
             message: 'Provide the steps to install your project:'
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Let us know how you intend to use your program:'
         },
         {
             type: 'input',
@@ -100,13 +121,13 @@ inquirer
         {
             type: 'input',
             name: 'year',
-            message: 'Please enter the current year:'
+            message: 'Please provide the year the project was created:'
         },
         {
             type: 'input',
-            name: 'firstName',
-            message: 'Provide your name for the license:'
-        },
+            name: 'username',
+            message: 'Please provide the creators username:'
+        }
     ])
     .then((responses) => {
         const createReadMe = generateReadMe(responses);
