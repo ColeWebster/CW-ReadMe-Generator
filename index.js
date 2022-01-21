@@ -36,7 +36,7 @@ inquirer
     .then((responses) => {
         const createReadMe = generateReadMe(responses);
 
-        fs.writeFile('readme.md', createReadMe, (err) =>
+        fs.writeFile(`${responses.headling}readme.md`, createReadMe, (err) =>
             err ? console.log(err) : console.log('Created!')
         );
     });
