@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ColeWebster/ReadMeCreator/issues"
   },
-  "homepage": "https://github.com/ColeWebster/ReadMeCreator#readme"
+  "homepage": "https://github.com/ColeWebster/ReadMeCreator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }

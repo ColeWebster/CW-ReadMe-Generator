@@ -14,16 +14,30 @@
 
 
 <h1 id='description'> Description </h1>
-      -
+      
+      - ${reponses.description}
+
 <h1 id='install'> Installation </h1>
-      -
+      
+      - ${responses.install}
+
 <h1 id='usage'> Usage </h1>
-      -
+      
+      - ${responses.usage}
+
 <h1 id='contributing'> Contributing </h1>
-      -
+      
+      - ${responses.email}
+      
+      - ${responses.github}
+      
+      - ${responses.linked}
+
 <h1 id='test'> Testing </h1>
-      -
-      -
+     
+      - ${responses.testing}
+     
+      - ${responses.questions}
 
 <h1 id='license'> License </h1>
 Copyright <YEAR> <OWNER>
