@@ -1,7 +1,13 @@
 # ReadMeCreator
 
-# 09 Node.js Homework: Professional README Generator
+-- Using prompts via Node, I have created a readMe file that will dynamically name itself based on the project name the user enters.
 
+-- View a live demonstration prior to updated license selector here: https://drive.google.com/file/d/123zSAGrguXEeu7p5uTEVyHiM55eRvCKY/view?usp=sharing
+
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
+
+## Below is the provided information for this assignment
 ## Your Task
 
 When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
