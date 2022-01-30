@@ -14,32 +14,32 @@
 
 <a href="#test"> 5. Testing </a>
 
-## Description <h1 id='description'> </h1>
+## Description <h1 id='description'></h1>
           
-    - To help fellow developers make fantastic readMe files
+To help fellow developers make fantastic readMe files
 
-    - View my deployment here: https://watch.screencastify.com/v/7blrr0oetcmNXADqSWbU
+[View a demo of this ReadMe](https://watch.screencastify.com/v/7blrr0oetcmNXADqSWbU)
     
 ## Installation <h1 id='install'></h1>
           
-    - Clone the repo and enjoy!
+Clone the repo and enjoy!
     
 ## Usage <h1 id='usage'> </h1>
           
-    - Test and create readMe for future projects
+Test and create readMe for future projects
 
 
     
 ## Contributing <h1 id='contributing'></h1>
           
-    - Cole.Webster@gmail.com
+Cole.Webster@gmail.com
           
-    - https://github.com/ColeWebster?tab=repositories
+[Github](https://github.com/ColeWebster?tab=repositories)
           
-    - linkedin.com/in/colewebster
+[LinkedIn](linkedin.com/in/colewebster)
     
 ## Testing <h1 id='test'></h1>
          
-    - Clone the repo, run in the terminal
+Clone the repo, run in the terminal
          
-    - Contact using the abvoe email
+Contact using the abvoe email
